@@ -116,7 +116,7 @@ class novelRelationShip():
 		print('\n\n')
 
 		print(r'============药老的徒弟============')
-		pupil = model.most_similar(positive=['韩枫','萧炎'],negative=['药尘'],topn=1)
+		pupil = model.most_similar(positive=['萧炎'],negative=['药老'],topn=1)
 		print(pupil)
 
 
@@ -126,11 +126,11 @@ class novelRelationShip():
 
 
 a = novelRelationShip()
-#print(a.findPeopleCount())
-#count = a.findPeopleCount()
-#show = a.showAsDataFrame(count)
-#a.showAsMat(show)
-#print(show)
-#tags = a.showAsWordCloud()
-#a.getModel(tags)
+print(a.findPeopleCount())
+count = a.findPeopleCount()
+show = a.showAsDataFrame(count)
+a.showAsMat(show)
+print(show)
+tags = a.showAsWordCloud()
+a.getModel(tags)
 a.modelText()
